@@ -1,0 +1,32 @@
+# depslib dependency file v1.0
+1544216918 source:c:\users\think\desktop\iia\iia_enunciado_tp2\tp2\algoritmo.c
+	<stdio.h>
+	<stdlib.h>
+	<math.h>
+	"algoritmo.h"
+	"funcao.h"
+	"utils.h"
+
+1479410501 c:\users\think\desktop\iia\iia_enunciado_tp2\tp2\algoritmo.h
+
+1478082402 c:\users\think\desktop\iia\iia_enunciado_tp2\tp2\funcao.h
+
+1544398769 c:\users\think\desktop\iia\iia_enunciado_tp2\tp2\utils.h
+
+1478801605 source:c:\users\think\desktop\iia\iia_enunciado_tp2\tp2\funcao.c
+	"funcao.h"
+
+1544398769 source:c:\users\think\desktop\iia\iia_enunciado_tp2\tp2\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"algoritmo.h"
+	"utils.h"
+
+1544398727 source:c:\users\think\desktop\iia\iia_enunciado_tp2\tp2\utils.c
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+	"utils.h"
+	<string.h>
+

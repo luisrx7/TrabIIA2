@@ -1,0 +1,10 @@
+C:\Users\LUISFR~1\AppData\Local\Temp\ccyJaHoW.o:main.c:(.text+0xbf): undefined reference to `init_rand'
+C:\Users\LUISFR~1\AppData\Local\Temp\ccyJaHoW.o:main.c:(.text+0xd3): undefined reference to `init_dados'
+C:\Users\LUISFR~1\AppData\Local\Temp\ccyJaHoW.o:main.c:(.text+0xf1): undefined reference to `imprime_matriz'
+C:\Users\LUISFR~1\AppData\Local\Temp\ccyJaHoW.o:main.c:(.text+0x170): undefined reference to `gera_sol_inicial'
+C:\Users\LUISFR~1\AppData\Local\Temp\ccyJaHoW.o:main.c:(.text+0x187): undefined reference to `escreve_sol'
+C:\Users\LUISFR~1\AppData\Local\Temp\ccyJaHoW.o:main.c:(.text+0x1b4): undefined reference to `trepa_colinas_probabilistico'
+C:\Users\LUISFR~1\AppData\Local\Temp\ccyJaHoW.o:main.c:(.text+0x1e6): undefined reference to `escreve_sol'
+C:\Users\LUISFR~1\AppData\Local\Temp\ccyJaHoW.o:main.c:(.text+0x252): undefined reference to `substitui'
+C:\Users\LUISFR~1\AppData\Local\Temp\ccyJaHoW.o:main.c:(.text+0x2b1): undefined reference to `escreve_sol'
+collect2.exe: error: ld returned 1 exit status
