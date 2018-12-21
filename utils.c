@@ -5,6 +5,14 @@
 #include <string.h>
 
 
+
+void logtofile(int num_iter,int best ,float mbf){
+  FILE *out = fopen("output.txt", "a");
+
+  fprintf(out, "%d\t%d\t%.2f\n",num_iter,best,mbf);
+  fclose(out);
+}
+
 // Leitura do ficheiro de input
 // Par�metros de entrada: Nome do ficheiro, nome, N�mero de v�rtices, n, N�mero de itera��es, iter
 // Par�metros de sa�da: Matriz de adjac�ncias, p
@@ -108,7 +116,7 @@ void imprime_matriz(int *grafo, int vert){
   for (int i = 0; i < vert; i++) {
         printf("\n");
         for (int j = 0; j < vert; j++) {
-                    printf("%d\t", grafo[i*vert+j]);
+                    printf("%d ", grafo[i*vert+j]);
         }
     }
 }

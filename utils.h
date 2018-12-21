@@ -1,3 +1,4 @@
+void logtofile(int num_iter,int best ,float mbf);
 int* init_dados(char *nome, int *n);
 void gera_sol_inicial(int *sol, int v);
 void escreve_sol(int *sol, int vert);

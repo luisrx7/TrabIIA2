@@ -5,17 +5,23 @@
 #include "utils.h"
 #include "funcao.h"
 
-#define DEFAULT_RUNS 50
+#define DEFAULT_RUNS 10
 
 int main(int argc, char *argv[])
 {
     char    nome_fich[100];
-    int     vert,  num_iter = 10, k, runs, custo, best_custo;
+    int     vert,  num_iter = 1000, k, runs, custo, best_custo;
     int     *grafo, *sol, *best;
 	float   mbf = 0.0;
 
     // L� os argumentos de entrada
-	if (argc == 3)
+    if (argc == 4)
+  	{
+  		num_iter = atoi(argv[3]);
+      runs = atoi(argv[2]);
+  		strcpy(nome_fich, argv[1]);
+  	}
+  else if (argc == 3)
 	{
 		runs = atoi(argv[2]);
 		strcpy(nome_fich, argv[1]);
@@ -73,9 +79,9 @@ int main(int argc, char *argv[])
 
 
 		// Executa o algoritmo do trepa colinas
-		custo = trepa_colinas(sol, grafo, vert, num_iter);
+		//custo = trepa_colinas(sol, grafo, vert, num_iter);
         // Ficha 7 - 4.4
-		//custo = trepa_colinas_probabilistico(sol, grafo, vert, num_iter);
+		custo = trepa_colinas_probabilistico(sol, grafo, vert, num_iter);
         // Ficha 7 - 4.5
 //		custo = recristalizacao_simulada(sol, grafo, vert, num_iter);
 		// Mostra a solu��o encontrada na repeti��o k e o seu custo
@@ -97,6 +103,9 @@ int main(int argc, char *argv[])
 	printf("\nMelhor solucao encontrada");
 	escreve_sol(best, vert);
 	printf("Custo final: %2d\n", best_custo);
+
+  logtofile(num_iter,best_custo,mbf/k);
+
 	// Liberta a mem�ria usada
 	free(grafo);
     free(sol);
